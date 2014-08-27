@@ -1,0 +1,49 @@
+body {
+  color: #555;
+  font-family: "Source Han Sans JP";
+}
+
+a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  border-bottom: solid 1px #ccc;
+}
+
+h2 {
+  border-bottom: solid 1px #ccc;
+}
+
+nav.toc {
+  /* border: solid 1px #aaa; */
+  /* display: table; */
+  /* padding: 1em; */
+  /* background-color: #f9f9f9; */
+  /* font-size: smaller; */
+}
+
+nav.toc p.toctitle {
+  font-style: italic;
+}
+
+p.text {
+}
+
+p.quote {
+  margin-left: 4em;
+}
+
+p.mission {
+  font-size: smaller;
+  text-align: center;
+}
+
+div.dager {
+  text-align: center;
+}
