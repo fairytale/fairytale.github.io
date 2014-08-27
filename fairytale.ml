@@ -15,6 +15,7 @@ let h3 txt = Html5.M.(h3 [pcdata txt])
 let p txt = Html5.M.(p ~a:[a_class ["text"]] [pcdata ("　" ^ txt)])
 let q txt = Html5.M.(p ~a:[a_class ["text"; "quote"]] [pcdata ("　" ^ txt)])
 let s txt = Html5.M.(p ~a:[a_class ["text"]] [pcdata ("「" ^ txt ^ "」")])
+let t txt = Html5.M.(p ~a:[a_class ["text"]] [pcdata ("（" ^ txt ^ "）")])
 let dager = Html5.M.(div ~a:[a_class ["dager"]] [pcdata "†"])
 
 let pasberth = Html5.M.(a ~a:[a_href "https://twitter.com/pasberth"] [pcdata "pasberth"])
