@@ -1,6 +1,11 @@
 body {
   color: #555;
   font-family: "Source Han Sans JP";
+  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
 a {
