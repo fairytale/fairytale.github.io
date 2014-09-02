@@ -1756,7 +1756,7 @@ let contents = [
   p "こうして、聖暦1928年の夏休み、8月8日、
      わたしは砂漠のワームゲートへ向かうことにした。";
 
-  h2 "Act 2";
+  (*h2 "Act 2";
 
   h3 "Episode 2.1";
 
@@ -1789,7 +1789,7 @@ let contents = [
   h3 "Episode 3.6";
   h3 "Episode 3.7";
   h3 "Episode 3.8";
-  h3 "Episode 3.9";
+  h3 "Episode 3.9";*)
 ]
 
 let html = Fairytale.make
