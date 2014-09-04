@@ -260,7 +260,7 @@ let contents = [
 ]
 
 let html = Fairytale.make
-            ~title:"SS"
+            ~title:"fairytale.github.io/ss"
             ~contents:contents
             ~css_path:"../fairytale.css"
             ()
