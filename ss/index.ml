@@ -5,8 +5,17 @@
 
 open Fairytale
 
+let hardproblem =
+  Html5.M.
+  (a ~a:[a_href "http://minamichihaya.github.io/hardproblem/"]
+     [pcdata "ふたりのハードプロブレム"])
+
 let contents = [
-  h2 "ハドプレSS 1";
+  h2 "ハドプレSS";
+  Html5.M.
+  (p [ hardproblem
+     ; pcdata "という小説の二次創作SSです。"]);
+  h3 "ハドプレSS 1";
   p "ある日希海が大学から帰ってくる(けっきょく希海はなんだかんだ言って復学したのだ)と、リコが希海に抱きついてきた！";
   s "おかえりなさい、希海さぁん……♥";
   p "なんだか妙に甘い声だ。";
@@ -98,7 +107,7 @@ let contents = [
   p "こうして一件落着……かと思いきや、リコは病気のとき起こったことをしっかり覚えていた。";
   p "カップルがするようなマフラーをつけてでかけることを強要するようなリコだが、「それともわたしにする？」なんて言いかけたことはとても恥ずかしいらしく真っ赤になって希海をひっぱたいたのだった。(完)";
 
-  h2 "ハドプレSS 2";
+  h3 "ハドプレSS 2";
   p "ある日定期メンテのため希海とリコがSDRへ行くと東が気色悪いくらい嬉しそうに笑っていた。";
   p "希海はたずねた。";
   s "どうしたんです？　にやにやしちゃって……";
@@ -238,6 +247,16 @@ let contents = [
   p "希海は真っ赤になって抗議した。";
   s "ちょ、ちょ、ちょ、それはいくらなんでもおかしいんじゃない？";
   p "こうしてリコと希海の新生活が始まるのだった(完)";
+
+  h2 "リンク";
+  Html5.M.(a ~a:[a_href "http://minamichihaya.github.io/"]
+             [img ~src:"../img/mayuragicenter_banner.png"
+                  ~alt:"真揺中心"
+                  ()]);
+  Html5.M.(a ~a:[a_href "http://minamichihaya.github.io/hardproblem"]
+             [img ~src:"../img/hpot_banner.png"
+                  ~alt:"ふたりのハードプロブレム"
+                  ()]);
 ]
 
 let html = Fairytale.make
