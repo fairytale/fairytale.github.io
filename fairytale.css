@@ -52,3 +52,7 @@ p.mission {
 div.dager {
   text-align: center;
 }
+
+dt:target {
+  background-color: #eed;
+}
