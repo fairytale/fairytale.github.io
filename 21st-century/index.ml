@@ -563,10 +563,10 @@ let contents =
     p <<
        　わたしが展開と因数分解がわからないということを言うと、
        からむちゃんはノートに式を書いた。>>;
-(*    blockquote
+    blockquote
       <<
        $img ~a:[a_height 24] ~src:"factorization.png" ~alt:"" ()$
-       >>;*)
+       >>;
     (*blockquote
       <<(x + y)$sup [pcdata "2"]$ = x$sup [pcdata "2"]$ + 2xy + y$sup [pcdata "2"]$>>;*)
     p <<「これだけだよ。なにが難しい？」>>;
@@ -584,10 +584,10 @@ let contents =
     p <<　するとからむちゃんは別の式を書いた。>>;
     div ~a:[a_class ["authentic"]]
         [
-(*    blockquote
+    blockquote
       <<
        $img ~a:[a_height 24] ~src:"binomial-theorem.png" ~alt:"" ()$
-       >>;*)
+       >>;
     p <<　からむちゃんは意地悪そうにニヤッとした。>>;
     p <<「二項定理。n次方程式をこれだけで展開と因数分解のどちらもできる
        よ。これだけ覚えておけばいいんじゃない？」>>;
