@@ -1,5 +1,6 @@
 body {
   color: #555;
+  word-wrap: break-word;
   font-family: "Source Han Sans JP";
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
