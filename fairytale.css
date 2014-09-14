@@ -44,6 +44,20 @@ p.quote {
   margin-left: 4em;
 }
 
+p.broadcast {
+  font-style: italic;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+blockquote:before {
+  content: "“";
+  color: #ccc;
+  font-size: 2em;
+}
+
 p.mission {
   font-size: smaller;
   text-align: center;
@@ -55,4 +69,14 @@ div.dager {
 
 dt:target {
   background-color: #eed;
+}
+
+div.authentic {
+  border-left: solid #efe 0.5em;
+}
+
+div.authentic div.basis {
+  background-color: #efe;
+  font-style: italic;
+  text-align: right;
 }

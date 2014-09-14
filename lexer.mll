@@ -15,6 +15,6 @@ rule token = parse
                      Lexing.pos_lnum = pos.Lexing.pos_lnum + 1;
                      Lexing.pos_bol = pos.Lexing.pos_cnum;
                    };
-                 token lexbuf
+                 STRING (Lexing.lexeme_start_p lexbuf, Lexing.lexeme lexbuf)
                }
            | eof { EOF }
