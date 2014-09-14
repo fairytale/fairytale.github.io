@@ -103,6 +103,8 @@ let contents =
     p <<Coming soon.>>;
     h3 <<ホヨ編について>>;
     p <<Coming soon.>>;
+    h3 <<ならば編について>>;
+    p <<Coming soon.>>;
     h2 <<コーリ編>>;
     h3 <<2011年>>;
     (*p <<
@@ -1345,6 +1347,8 @@ let contents =
     h2 <<テーリ編>>;
     p <<Coming soon.>>;
     h2 <<ホヨ編>>;
+    p <<Coming soon.>>;
+    h2 <<ならば編>>;
     p <<Coming soon.>>;
 
     (*h2 <<世界観紹介>>;
