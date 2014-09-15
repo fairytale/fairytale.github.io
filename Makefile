@@ -7,7 +7,8 @@ parser.ml: parser.mly
 lexer.ml: lexer.mll
 	ocamllex lexer.mll
 
-parser.cmo: parser.ml
+parser.cmo: parser.ml parser.mli
+	ocamlc -c parser.mli
 	ocamlc -c parser.ml
 
 lexer.cmo: lexer.ml
