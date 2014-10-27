@@ -2,7 +2,7 @@
 % Pasberth
 % 2014-10-27
 
-<div style="text-align: center;"><img src="abstr-logo.svg" width="320px" 
+<div style="text-align: center;"><img src="abstr-logo.png" width="320px" 
 height="320px" /></div>
 
 ## Abstract
