@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Pasberth" />
+  <meta name="date" content="2014-10-27" />
+  <title>λ Abstraction</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <style type="text/css">
+  body {
+    color: #333;
+    word-wrap: break-word;
+    font-family: "cmunrm", "ipam" /*, "Source Han Sans JP"*/;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -o-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  a {
+    color: #4183c4;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    border-bottom: solid 1px #eee;
+    font-size: 2.25em;
+  }
+  
+  h2 {
+    border-bottom: solid 1px #eee;
+    font-size: 1.75em;
+  }
+  
+  #header { display: none; }
+  
+  /*h2.author {
+    border: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h3.date {
+    display: inline-block;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+  }*/
+  
+  pre {
+    /*margin: 0.5em;*/
+    padding: 1em;
+    border-radius: 0.2em;
+    background-color: #f7f7f7;
+  }
+  
+  code {
+    font-family: "cmuntt";
+  }
+  </style>
+  <style type="text/css">
+  @font-face {
+    font-family: "cmunbbx";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbbx.ttf");
+  }
+  @font-face {
+    font-family: "cmunbi";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbi.ttf");
+  }
+  @font-face {
+    font-family: "cmunbl";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbl.ttf");
+  }
+  @font-face {
+    font-family: "cmunbmo";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbmo.ttf");
+  }
+  @font-face {
+    font-family: "cmunbmr";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbmr.ttf");
+  }
+  @font-face {
+    font-family: "cmunbso";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbso.ttf");
+  }
+  @font-face {
+    font-family: "cmunbsr";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbsr.ttf");
+  }
+  @font-face {
+    font-family: "cmunbtl";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbtl.ttf");
+  }
+  @font-face {
+    font-family: "cmunbto";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbto.ttf");
+  }
+  @font-face {
+    font-family: "cmunbx";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbx.ttf");
+  }
+  @font-face {
+    font-family: "cmunbxo";
+    src: url("../fonts/cm-unicode-0.7.0/cmunbxo.ttf");
+  }
+  @font-face {
+    font-family: "cmunci";
+    src: url("../fonts/cm-unicode-0.7.0/cmunci.ttf");
+  }
+  @font-face {
+    font-family: "cmunit";
+    src: url("../fonts/cm-unicode-0.7.0/cmunit.ttf");
+  }
+  @font-face {
+    font-family: "cmunobi";
+    src: url("../fonts/cm-unicode-0.7.0/cmunobi.ttf");
+  }
+  @font-face {
+    font-family: "cmunobx";
+    src: url("../fonts/cm-unicode-0.7.0/cmunobx.ttf");
+  }
+  @font-face {
+    font-family: "cmunorm";
+    src: url("../fonts/cm-unicode-0.7.0/cmunorm.ttf");
+  }
+  @font-face {
+    font-family: "cmunoti";
+    src: url("../fonts/cm-unicode-0.7.0/cmunoti.ttf");
+  }
+  @font-face {
+    font-family: "cmunrb";
+    src: url("../fonts/cm-unicode-0.7.0/cmunrb.ttf");
+  }
+  @font-face {
+    font-family: "cmunrm";
+    src: url("../fonts/cm-unicode-0.7.0/cmunrm.ttf");
+  }
+  @font-face {
+    font-family: "cmunsi";
+    src: url("../fonts/cm-unicode-0.7.0/cmunsi.ttf");
+  }
+  @font-face {
+    font-family: "cmunsl";
+    src: url("../fonts/cm-unicode-0.7.0/cmunsl.ttf");
+  }
+  @font-face {
+    font-family: "cmunso";
+    src: url("../fonts/cm-unicode-0.7.0/cmunso.ttf");
+  }
+  @font-face {
+    font-family: "cmunss";
+    src: url("../fonts/cm-unicode-0.7.0/cmunss.ttf");
+  }
+  @font-face {
+    font-family: "cmunssdc";
+    src: url("../fonts/cm-unicode-0.7.0/cmunssdc.ttf");
+  }
+  @font-face {
+    font-family: "cmunst";
+    src: url("../fonts/cm-unicode-0.7.0/cmunst.ttf");
+  }
+  @font-face {
+    font-family: "cmunsx";
+    src: url("../fonts/cm-unicode-0.7.0/cmunsx.ttf");
+  }
+  @font-face {
+    font-family: "cmuntb";
+    src: url("../fonts/cm-unicode-0.7.0/cmuntb.ttf");
+  }
+  @font-face {
+    font-family: "cmunti";
+    src: url("../fonts/cm-unicode-0.7.0/cmunti.ttf");
+  }
+  @font-face {
+    font-family: "cmuntt";
+    src: url("../fonts/cm-unicode-0.7.0/cmuntt.ttf");
+  }
+  @font-face {
+    font-family: "cmuntx";
+    src: url("../fonts/cm-unicode-0.7.0/cmuntx.ttf");
+  }
+  @font-face {
+    font-family: "cmunui";
+    src: url("../fonts/cm-unicode-0.7.0/cmunui.ttf");
+  }
+  @font-face {
+    font-family: "cmunvi";
+    src: url("../fonts/cm-unicode-0.7.0/cmunvi.ttf");
+  }
+  @font-face {
+    font-family: "cmunvt";
+    src: url("../fonts/cm-unicode-0.7.0/cmunvt.ttf");
+  }
+  @font-face {
+    font-family: "ipag";
+    src: url("../fonts/IPAfont00303/ipag.ttf");
+  }
+  @font-face {
+    font-family: "ipagp";
+    src: url("../fonts/IPAfont00303/ipagp.ttf");
+  }
+  @font-face {
+    font-family: "ipam";
+    src: url("../fonts/IPAfont00303/ipam.ttf");
+  }
+  @font-face {
+    font-family: "ipamp";
+    src: url("../fonts/IPAfont00303/ipamp.ttf");
+  }
+  </style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">λ Abstraction</h1>
+<h2 class="author">Pasberth</h2>
+<h3 class="date">2014-10-27</h3>
+</div>
+<div style="text-align: center;">
+<img src="abstr-logo.svg" width="320px" 
+height="320px" />
+</div>
+<h2 id="abstract">Abstract</h2>
+<p>　京都λ抽象学院は京都にある国立全寮制女子高等専門学校。</p>
+<p>　まだ工学の分野に進む女の子が少なかった頃、 工学に興味のある女の子を奨励する目的で全国に設立された λ抽象学院のひとつです。</p>
+<p>　京都λ抽象学院は工学の分野に進む女の子のあいだでは 名門中の名門校。</p>
+<p>　Hindley-Milner 型推論でで有名な Robin Milner が書いた The Definition of Standard ML (Revised) を教科書として 使うらしくて、それだけでもわくわくする。</p>
+<p>　がたんごとん、がたんごとん……と、規則的に繰り返す 電車の音が、わたしを安心させる。緊張がちょっとほぐれる感じがする。 大阪と京都間の1時間。</p>
+<p>　わたし、 <ruby>古園井<rp>(</rp><rt>こぞのい</rt><rp>)</rp></ruby> <ruby>真鳥<rp>(</rp><rt>まとり</rt><rp>)</rp></ruby>は、 京都λ抽象学院の推薦入試の面接を受けに行くところです。</p>
+<!--
+
+　今日はその京都λ抽象学院の入学式。
+
+　わたしは新入生です。
+
+　京都λ抽象学院は工学の分野に進む女の子のあいだでは名門中の名門校。
+
+　入学試験はとても難しくて、たとえば、 R5RS や
+The Definition of Standard ML, Revised から出題される。
+
+　そんな試験を突破してそこに集まる女の子はとびきりの変人ばかり
+というウワサ。
+
+　中学までは趣味について語り合える友達がいなかったけど、
+この学校ではいったいどんなおかしな友達に巡り会えるのだろうと
+いまからどきどきです。
+
+　λ抽象学院
+-->
+<!--
+## Introduction
+
+## Method
+
+## Result
+
+## Discussion
+
+## Conclution
+-->
+</body>
+</html>
