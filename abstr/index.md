@@ -12,7 +12,7 @@ height="320px" /></div>
 　京都λ抽象学院は工学の分野に進む女の子のあいだでは
 名門中の名門校。
 
-　Hindley-Milner 型推論でで有名な Robin Milner が書いた
+　Hindley-Milner 型推論で有名な Robin Milner が書いた
 The Definition of Standard ML (Revised) を教科書として
 使うらしくて、それだけでもわくわくする。
 
