@@ -7,9 +7,9 @@ index.html: README.md
 	-H ../pandoc/header.html \
 	-V css=../pandoc/main.css \
 	-s \
-        -f markdown \
-        -t html \
-        -o index.html
+	-f markdown \
+	-t html \
+	-o index.html
 
 knowledge.html: knowledge.md
 	pandoc \
