@@ -3,7 +3,7 @@
 }
 @media screen and (max-device-width: 480px) {
   /* Smart phones */
-  #logo { width: 240px; height: 240px; }
+  #logo { width: 240px !important; height: 240px !important; }
 }
 
 body {
