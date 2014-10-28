@@ -68,7 +68,7 @@
        inkscape:export-ydpi="900" />
     <text
        xml:space="preserve"
-       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Concrete;-inkscape-font-specification:CMU Concrete Medium"
+       style="font-size:24px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333;fill-opacity:1;stroke:none;font-family:CMU Concrete;-inkscape-font-specification:CMU Concrete Medium"
        x="-0.81599998"
        y="46"
        id="text3001"
@@ -79,7 +79,7 @@
          y="46">A</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0.75px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Concrete;-inkscape-font-specification:CMU Concrete Medium"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0.75px;word-spacing:0px;fill:#333;fill-opacity:1;stroke:none;font-family:CMU Concrete;-inkscape-font-specification:CMU Concrete Medium"
        x="17.200001"
        y="45.824001"
        id="text3005"
@@ -90,7 +90,7 @@
          y="45.824001">BSTR</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Concrete;-inkscape-font-specification:CMU Concrete Medium"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333;fill-opacity:1;stroke:none;font-family:CMU Concrete;-inkscape-font-specification:CMU Concrete Medium"
        x="-0.54400003"
        y="59.824001"
        id="text3009"
@@ -101,7 +101,7 @@
          y="59.824001">ACTION</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:CMU Serif;-inkscape-font-specification:CMU Serif Medium"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#333;fill-opacity:1;stroke:none;font-family:CMU Serif;-inkscape-font-specification:CMU Serif Medium"
        x="22.992001"
        y="27.639999"
        id="text3013"
