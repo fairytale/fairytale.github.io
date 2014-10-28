@@ -1,5 +1,5 @@
-<div style="text-align: center;"><img src="abstr-logo.png" width="320px" 
-height="320px" /></div>
+<p align="center"><img src="abstr-logo.png" width="320px" 
+height="320px" /></p>
 
 ## Abstract
 
