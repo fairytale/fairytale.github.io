@@ -1,5 +1,5 @@
-index.html: README.md
-	sed 's/width="320px" height="320px" //' README.md | \
+index.html: index.md
+	sed 's/width="320px" height="320px" //' index.md | \
 	pandoc \
 	-V pagetitle='λ Abstraction' \
 	-V date-meta=`date -I` \
