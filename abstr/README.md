@@ -1,5 +1,4 @@
-<p align="center"><img src="abstr-logo.png" width="320px" 
-height="320px" /></p>
+<p align="center"><img id="logo" src="abstr-logo.png" width="320px" height="320px" /></p>
 
 ## Abstract
 
