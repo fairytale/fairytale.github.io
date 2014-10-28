@@ -182,19 +182,19 @@ code {
 @font-face {
   font-family: "cmunvt";
   src: url("../fonts/cm-unicode-0.7.0/cmunvt.ttf");
-}
+}*/
 @font-face {
   font-family: "ipag";
   src: url("../fonts/IPAfont00303/ipag.ttf");
-}
+}/*
 @font-face {
   font-family: "ipagp";
   src: url("../fonts/IPAfont00303/ipagp.ttf");
-}*/
+}
 @font-face {
   font-family: "ipam";
   src: url("../fonts/IPAfont00303/ipam.ttf");
-}/*
+}
 @font-face {
   font-family: "ipamp";
   src: url("../fonts/IPAfont00303/ipamp.ttf");
