@@ -10,7 +10,7 @@
 body {
   color: #333;
   word-wrap: break-word;
-  font-family: "cmunrm", "ipag" /*, "Source Han Sans JP"*/;
+  font-family: "cmunrm", "ipam";
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
