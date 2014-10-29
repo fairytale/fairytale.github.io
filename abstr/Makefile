@@ -7,6 +7,7 @@ index.html: index.md
 	-H ../pandoc/header.html \
 	-V css=../pandoc/main.css \
 	-s \
+	--highlight-style monochrome \
 	-f markdown \
 	-t html \
 	-o index.html

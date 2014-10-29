@@ -49,7 +49,7 @@ pre {
 }
 
 code {
-  font-family: "cmuntt";
+  font-family: "CMU Typewriter Text";
 }
 /*@font-face {
   font-family: "cmunbbx";
@@ -98,11 +98,12 @@ code {
 @font-face {
   font-family: "cmunci";
   src: url("../fonts/cm-unicode-0.7.0/cmunci.ttf");
-}
+}*/
 @font-face {
-  font-family: "cmunit";
+  font-family: "CMU Typewriter Text";
+  font-style: italic;
   src: url("../fonts/cm-unicode-0.7.0/cmunit.ttf");
-}
+}/*
 @font-face {
   font-family: "cmunobi";
   src: url("../fonts/cm-unicode-0.7.0/cmunobi.ttf");
@@ -162,11 +163,11 @@ code {
 @font-face {
   font-family: "cmunti";
   src: url("../fonts/cm-unicode-0.7.0/cmunti.ttf");
-}
+}*/
 @font-face {
-  font-family: "cmuntt";
+  font-family: "CMU Typewriter Text";
   src: url("../fonts/cm-unicode-0.7.0/cmuntt.ttf");
-}
+}/*
 @font-face {
   font-family: "cmuntx";
   src: url("../fonts/cm-unicode-0.7.0/cmuntx.ttf");
