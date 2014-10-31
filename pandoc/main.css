@@ -18,12 +18,12 @@ body {
   -ms-text-size-adjust: 100%;
 }
 
-a {
+a[href] {
   color: #4183c4;
   text-decoration: none;
 }
 
-a:hover {
+a[href]:hover {
   text-decoration: underline;
 }
 
@@ -51,6 +51,24 @@ pre {
 
 code {
   font-family: "CMU Typewriter Text";
+}
+
+.footnote:target {
+  /*border-bottom: solid 2px #f88;*/
+  font-weight: bold;
+  font-style: italic;
+}
+
+.footnote:target + a {
+  font-weight: bold;
+  font-style: italic;
+  /*border-bottom: solid 2px #f88;*/
+}
+
+.footnote:target + span {
+  font-weight: bold;
+  font-style: italic;
+  /*border-bottom: solid 2px #f88;*/
 }
 
 /*@font-face {
