@@ -10,7 +10,7 @@
 body {
   color: #333;
   word-wrap: break-word;
-  font-family: "cmunrm", "ipag" /*, "Source Han Sans JP"*/;
+  font-family: "CMU Serif", "ipag" /*, "Source Han Sans JP"*/;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -35,12 +35,13 @@ h1 {
 h2 {
   border-bottom: solid 1px #eee;
   font-size: 1.75em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
+  font-style: italic;
 }
 
-h2:first-letter {
+/*h2:first-letter {
   font-size: 1.5em;
-}
+}*/
 
 pre {
   padding: 1em;
@@ -126,7 +127,7 @@ code {
   src: url("../fonts/cm-unicode-0.7.0/cmunrb.ttf");
 }*/
 @font-face {
-  font-family: "cmunrm";
+  font-family: "CMU Serif";
   src: url("../fonts/cm-unicode-0.7.0/cmunrm.ttf");
 }/*
 @font-face {
@@ -160,11 +161,12 @@ code {
 @font-face {
   font-family: "cmuntb";
   src: url("../fonts/cm-unicode-0.7.0/cmuntb.ttf");
-}
-@font-face {
-  font-family: "cmunti";
-  src: url("../fonts/cm-unicode-0.7.0/cmunti.ttf");
 }*/
+@font-face {
+  font-family: "CMU Serif";
+  font-style: italic;
+  src: url("../fonts/cm-unicode-0.7.0/cmunti.ttf");
+}
 @font-face {
   font-family: "CMU Typewriter Text";
   src: url("../fonts/cm-unicode-0.7.0/cmuntt.ttf");
