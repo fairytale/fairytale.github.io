@@ -12,6 +12,20 @@ index.html: index.md
 	-t html \
 	-o index.html
 
+ep2045.1.22.html: ep2045.1.22.md
+	sed 's/width="320px" height="320px" //' $^ | \
+	pandoc \
+	-V pagetitle='λ Abstraction' \
+	-V date-meta=`date -I` \
+	-V author-meta=Pasberth \
+	-H ../pandoc/header.html \
+	-V css=../pandoc/main.css \
+	-s \
+	--highlight-style monochrome \
+	-f markdown \
+	-t html \
+	-o $@
+
 knowledge.html: knowledge.md
 	pandoc \
 	-T 'Knowledge' \
