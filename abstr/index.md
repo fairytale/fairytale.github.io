@@ -74,12 +74,12 @@ The Definition of Standard ML (Revised) [[1]](#sml97-defn)
 
 　それから中学1年生のとき、京都λ抽象学院では
 Standard ML の古典的な規格である The Definition of Standard ML (Revised)
-を教科書として使えるらしいと知った。わたしは
+を教科書として使っているらしいと知った。わたしは
 感動した。そこに行けば、もしかしたら Standard ML が好きな友達ができる
-かもしれない！　わたしはそう確信した。
+かもしれない！
 
 　ちなみに、なぜいわゆる現代的な Successor ML [[4]](#successor-ml)
-ではなく SML '97 [[note 1]](#note-sml97) なのかと言うと Successor ML 
+ではなく SML '97 [[note 2]](#note-sml97) なのかと言うと Successor ML 
 は少々大きすぎるので授業で使うには SML '97
 のほうが適しているとのことだった。
 
@@ -347,6 +347,8 @@ infix のような機能の実装、 Hindley-Milner
 「なるほど。主に言語処理系の実装を頑張ったのですね」
 
 「は、はい……」
+
+「それでは最後の質問です。卒業したあとしたいことはありますか？」
 
 「それは、まだ……正直、わたし自身が本当はなにをしたいのかもよく
 わかりません。ただ、 SML が好きというだけで……」
