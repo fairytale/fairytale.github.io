@@ -470,7 +470,8 @@ infix のような機能の実装、 Hindley-Milner
 
 　藤阪先生は続ける。
 
-「ただ、 Standard ML を好きな生徒はいないけど、 Haskell とか Ruby 
+「ただ、 Standard ML を好きな生徒はあんまりいないけど、 Haskell とか 
+Ruby 
 とか、そのあたりを好きな生徒はけっこう多いよ。メジャーだからね」
 
 　Standard ML はなかなか流行っているとは言いにくい言語。
