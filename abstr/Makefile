@@ -15,6 +15,21 @@ index.html: index.md
 ep2045.1.22.html: ep2045.1.22.md
 	sed 's/width="320px" height="320px" //' $^ | \
 	pandoc \
+	-T 'Episode 2045.1.22' \
+	-V pagetitle='λ Abstraction' \
+	-V date-meta=`date -I` \
+	-V author-meta=Pasberth \
+	-H ../pandoc/header.html \
+	-V css=../pandoc/main.css \
+	-s \
+	--highlight-style monochrome \
+	-f markdown \
+	-t html \
+	-o $@
+ep2045.4.7.html: ep2045.4.7.md
+	sed 's/width="320px" height="320px" //' $^ | \
+	pandoc \
+	-T 'Episode 2045.4.7' \
 	-V pagetitle='λ Abstraction' \
 	-V date-meta=`date -I` \
 	-V author-meta=Pasberth \
