@@ -245,7 +245,7 @@ Standard ML の古典的な規格である The Definition of Standard ML (Revise
 もし胸に名札をつけていなかったら生徒かと勘違いしてしまいそう。
 
 　名札に書かれた名前。後藤
-<ruby>空<rp>(</rp><rt>そら</rt><rp>)</rp></ruby>
+<ruby>写理<rp>(</rp><rt>うつり</rt><rp>)</rp></ruby>
 先生。
 
 　他方の先生はうなじが見えるくらいの短い茶髪の先生。毛はとても細くて
