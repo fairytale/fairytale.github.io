@@ -1,24 +1,12 @@
 .PHONY: all
-all: index.html ep2045.1.22.html ep2045.4.7.html
+all: index.html README.html ep2045.1.22.html ep2045.4.7.html
 
-index.html: index.md
-	sed 's/md/html/;s/width="320px" height="320px" //' index.md | \
-	pandoc \
-	-V pagetitle='λ Abstraction' \
-	-V date-meta=`date -I` \
-	-V author-meta=Pasberth \
-	-H ../pandoc/header.html \
-	-V css=../pandoc/main.css \
-	-s \
-	--highlight-style monochrome \
-	-f markdown \
-	-t html \
-	-o index.html
+README.md: index.md
+	cp $^ $@
 
-ep2045.1.22.html: ep2045.1.22.md
+%.html: %.md
 	sed 's/md/html/;s/width="320px" height="320px" //' $^ | \
-	pandoc \
-	-T 'Episode 2045.1.22' \
+	pandoc $(shell perl -nle 'if(/^!(.*)/){print $$1}' $^) \
 	-V pagetitle='λ Abstraction' \
 	-V date-meta=`date -I` \
 	-V author-meta=Pasberth \
@@ -29,31 +17,3 @@ ep2045.1.22.html: ep2045.1.22.md
 	-f markdown \
 	-t html \
 	-o $@
-ep2045.4.7.html: ep2045.4.7.md
-	sed 's/md/html/;s/width="320px" height="320px" //' $^ | \
-	pandoc \
-	-T 'Episode 2045.4.7' \
-	-V pagetitle='λ Abstraction' \
-	-V date-meta=`date -I` \
-	-V author-meta=Pasberth \
-	-H ../pandoc/header.html \
-	-V css=../pandoc/main.css \
-	-s \
-	--highlight-style monochrome \
-	-f markdown \
-	-t html \
-	-o $@
-
-knowledge.html: knowledge.md
-	pandoc \
-	-T 'Knowledge' \
-	-V pagetitle='λ Abstraction' \
-	-V date-meta=`date -I` \
-	-V author-meta=Pasberth \
-	-H ../pandoc/header.html \
-	-V css=../pandoc/main.css \
-	-s \
-	-f markdown \
-	-t html \
-	knowledge.md \
-	-o knowledge.html
