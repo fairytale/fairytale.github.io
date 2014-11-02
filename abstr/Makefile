@@ -1,3 +1,6 @@
+.PHONY: all
+all: index.html ep2045.1.22.html ep2045.4.7.html
+
 index.html: index.md
 	sed 's/width="320px" height="320px" //' index.md | \
 	pandoc \

@@ -55,19 +55,21 @@ code {
 
 .footnote:target {
   /*border-bottom: solid 2px #f88;*/
-  font-weight: bold;
-  font-style: italic;
+  /*font-weight: bold;
+  font-style: italic;*/
 }
 
 .footnote:target + a {
-  font-weight: bold;
-  font-style: italic;
+  background-color: #ffd;
+  /*font-weight: bold;
+  font-style: italic;*/
   /*border-bottom: solid 2px #f88;*/
 }
 
 .footnote:target + span {
-  font-weight: bold;
-  font-style: italic;
+  background-color: #ffd;
+  /*font-weight: bold;
+  font-style: italic;*/
   /*border-bottom: solid 2px #f88;*/
 }
 

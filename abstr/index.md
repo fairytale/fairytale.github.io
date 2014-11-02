@@ -1,6 +1,8 @@
-<p align="center"><img id="logo" src="abstr-logo.png" width="320px" 
+<p align="center"><a href="index.html"><img id="logo" 
+src="abstr-logo.png" 
+width="320px" 
 height="320
-px" /></p>
+px" /></a></p>
 
 ## Episodes
 
