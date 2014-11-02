@@ -2,7 +2,7 @@
 all: index.html ep2045.1.22.html ep2045.4.7.html
 
 index.html: index.md
-	sed 's/width="320px" height="320px" //' index.md | \
+	sed 's/md/html/;s/width="320px" height="320px" //' index.md | \
 	pandoc \
 	-V pagetitle='λ Abstraction' \
 	-V date-meta=`date -I` \
@@ -16,7 +16,7 @@ index.html: index.md
 	-o index.html
 
 ep2045.1.22.html: ep2045.1.22.md
-	sed 's/width="320px" height="320px" //' $^ | \
+	sed 's/md/html/;s/width="320px" height="320px" //' $^ | \
 	pandoc \
 	-T 'Episode 2045.1.22' \
 	-V pagetitle='λ Abstraction' \
@@ -30,7 +30,7 @@ ep2045.1.22.html: ep2045.1.22.md
 	-t html \
 	-o $@
 ep2045.4.7.html: ep2045.4.7.md
-	sed 's/width="320px" height="320px" //' $^ | \
+	sed 's/md/html/;s/width="320px" height="320px" //' $^ | \
 	pandoc \
 	-T 'Episode 2045.4.7' \
 	-V pagetitle='λ Abstraction' \
