@@ -1,5 +1,5 @@
 .PHONY: all
-all: index.html README.html ep2045.1.22.html ep2045.4.7.html
+all: index.html README.html ep2045.1.22.html ep2045.4.7.html knowledge.html
 
 README.md: index.md
 	cp $^ $@
