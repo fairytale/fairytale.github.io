@@ -1,4 +1,4 @@
-<p align="center" class="local-vars">
+<p align="center" class="file-vars">
 (* -*- title: "λ Abstraction"; subtitle: nil -*- *)
 </p>
 
