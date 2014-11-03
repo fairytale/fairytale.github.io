@@ -3,10 +3,7 @@
 </p>
 
 <p align="center"><a href="./"><img id="logo" 
-src="abstr-logo.png" 
-width="320px" 
-height="320
-px" /></a></p>
+src="abstr-logo.png" width="320px" height="320px" /></a></p>
 
 ## Episodes
 
