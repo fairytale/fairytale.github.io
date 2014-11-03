@@ -73,6 +73,11 @@ code {
   /*border-bottom: solid 2px #f88;*/
 }
 
+.local-vars {
+  font-family: "CMU Typewriter Text";
+  /*color: #ccc;*/
+}
+
 /*@font-face {
   font-family: "cmunbbx";
   src: url("../fonts/cm-unicode-0.7.0/cmunbbx.ttf");
