@@ -1,6 +1,8 @@
-<p align="center" class="file-vars">
+<div align="center">
+<pre class="file-vars">
 (* -*- title: "λ Abstraction" -*- *)
-</p>
+</pre>
+</div>
 
 <p align="center"><a href="./"><img id="logo" 
 src="abstr-logo.png" width="320px" height="320px" /></a></p>

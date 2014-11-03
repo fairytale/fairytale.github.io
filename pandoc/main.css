@@ -43,7 +43,7 @@ h2 {
   font-size: 1.5em;
 }*/
 
-pre {
+pre:not([class=file-vars]) {
   padding: 1em;
   border-radius: 0.2em;
   background-color: #f7f7f7;
