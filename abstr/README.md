@@ -2,7 +2,7 @@
 (* -*- title: "λ Abstraction"; subtitle: nil -*- *)
 </p>
 
-<p align="center"><a href="index.md"><img id="logo" 
+<p align="center"><a href="./"><img id="logo" 
 src="abstr-logo.png" 
 width="320px" 
 height="320
