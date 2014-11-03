@@ -49,7 +49,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -79,7 +79,7 @@
          y="46">A</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:0.75px;word-spacing:0px;fill:#333;fill-opacity:1;stroke:none;font-family:CMU Concrete;-inkscape-font-specification:CMU Concrete Medium"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;line-height:125%;letter-spacing:1px;word-spacing:0px;fill:#333;fill-opacity:1;stroke:none;font-family:CMU Concrete;-inkscape-font-specification:CMU Concrete Medium"
        x="17.200001"
        y="45.824001"
        id="text3005"
