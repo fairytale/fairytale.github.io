@@ -5,7 +5,7 @@ README.md: index.md
 	cp $^ $@
 
 %.html: %.md
-	sed 's/md/html/;s/width="320px" height="320px" //' $^ | \
+	sed -f pp.sed $^ | perl -p pp.pl | \
 	pandoc $(shell perl -nle 'if(/^!(.*)/){print $$1}' $^) \
 	-V pagetitle='λ Abstraction' \
 	-V date-meta=`date -I` \
