@@ -6,6 +6,7 @@ README.md: index.md
 
 %.html: %.md
 	sed 's/md/html/;s/width="320px" height="320px" //' $^ | \
+	perl -pe 's/(?<!^)\*/\\*/g' | \
 	pandoc $(shell perl -nle 'if(/^!(.*)/){print $$1}' $^) \
 	-V pagetitle='λ Abstraction' \
 	-V date-meta=`date -I` \

@@ -1,5 +1,5 @@
 <p align="center" class="local-vars">
-(\* -\*- title: "λ Abstraction"; subtitle: nil -\*- \*)
+(* -*- title: "λ Abstraction"; subtitle: nil -*- *)
 </p>
 
 <p align="center"><a href="index.md"><img id="logo" 
