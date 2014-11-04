@@ -1,6 +1,6 @@
 <!-- IGNORE
 <p align="center" class="file-vars">
-(* -*- title: "λ Abstraction" -*- *)
+(* -*- title: "λ Abstraction"; theme: "百合" -*- *)
 </p>
 IGNORE -->
 
