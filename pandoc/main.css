@@ -10,10 +10,8 @@
 body {
   color: #333;
   word-wrap: break-word;
-  font-family: "CMU Serif", "Optima",
-               "IPAゴシック",
-               "Source Han Sans JP ",
-               "Times New Roman",
+  font-family:
+               "源ノ角ゴシック JP",
                "メイリオ",
                sans-serif;
   /*font-family: "CMU Serif", "ipag"*/ /*, "Source 
@@ -59,9 +57,14 @@ pre:not([class=file-vars]) {
 code {
 
   /*font-family: monospace;*/
-  font-family: "CMU Typewriter Text", "Source Code Pro",
+  font-family:
+               "CMU Typewriter Text",
+               "Source Code Pro",
+               "BitStream Vera Sans Mono",
                "Consolas", "Monaco",
-               "Courier New", "Courier",
+               "源ノ角ゴシック JP",
+               "Palatino Linotype",
+               /*"Courier New",*/ "Courier",
                monospace;
 }
 
@@ -86,9 +89,14 @@ code {
 }
 
 .file-vars {
-  font-family: "CMU Typewriter Text", "Source Code Pro",
+  font-family:
+               "CMU Typewriter Text",
+               "Source Code Pro",
+               "BitStream Vera Sans Mono",
                "Consolas", "Monaco",
-               "Courier New", "Courier",
+               "源ノ角ゴシック JP",
+               "Palatino Linotype",
+               /*"Courier New",*/ "Courier",
                monospace;
   /*font-family: "CMU Typewriter Text";*/
   /*color: #ccc;*/
