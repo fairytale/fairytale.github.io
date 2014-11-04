@@ -14,8 +14,6 @@ body {
                "源ノ角ゴシック JP",
                "メイリオ",
                sans-serif;
-  /*font-family: "CMU Serif", "ipag"*/ /*, "Source 
-Han Sans JP"*//*;*/
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -41,9 +39,7 @@ h2 {
   border-bottom: solid 1px #eee;
   font-size: 1.75em;
   text-transform: uppercase;
-  font-family: "CMU Serif",
-"Optima", "Times New Roman", serif;
-  /*font-style: italic;*/
+  font-family: "CMU Serif", "Optima", "Times New Roman", serif;
 }
 
 h2:first-letter {
@@ -57,8 +53,6 @@ pre:not([class=file-vars]) {
 }
 
 code {
-
-  /*font-family: monospace;*/
   font-family:
                "CMU Typewriter Text",
                "Source Code Pro",
@@ -66,28 +60,19 @@ code {
                "Consolas", "Monaco",
                "源ノ角ゴシック JP",
                "Palatino Linotype",
-               /*"Courier New",*/ "Courier",
+               "Courier",
                monospace;
 }
 
 .footnote:target {
-  /*border-bottom: solid 2px #f88;*/
-  /*font-weight: bold;
-  font-style: italic;*/
 }
 
 .footnote:target + a {
   background-color: #ffd;
-  /*font-weight: bold;
-  font-style: italic;*/
-  /*border-bottom: solid 2px #f88;*/
 }
 
 .footnote:target + span {
   background-color: #ffd;
-  /*font-weight: bold;
-  font-style: italic;*/
-  /*border-bottom: solid 2px #f88;*/
 }
 
 .file-vars {
@@ -98,159 +83,6 @@ code {
                "Consolas", "Monaco",
                "源ノ角ゴシック JP",
                "Palatino Linotype",
-               /*"Courier New",*/ "Courier",
+               "Courier",
                monospace;
-  /*font-family: "CMU Typewriter Text";*/
-  /*color: #ccc;*/
 }
-
-/*@font-face {
-  font-family: "cmunbbx";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbbx.ttf");
-}
-@font-face {
-  font-family: "cmunbi";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbi.ttf");
-}
-@font-face {
-  font-family: "cmunbl";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbl.ttf");
-}
-@font-face {
-  font-family: "cmunbmo";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbmo.ttf");
-}
-@font-face {
-  font-family: "cmunbmr";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbmr.ttf");
-}
-@font-face {
-  font-family: "cmunbso";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbso.ttf");
-}
-@font-face {
-  font-family: "cmunbsr";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbsr.ttf");
-}
-@font-face {
-  font-family: "cmunbtl";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbtl.ttf");
-}
-@font-face {
-  font-family: "cmunbto";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbto.ttf");
-}
-@font-face {
-  font-family: "cmunbx";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbx.ttf");
-}
-@font-face {
-  font-family: "cmunbxo";
-  src: url("../fonts/cm-unicode-0.7.0/cmunbxo.ttf");
-}
-@font-face {
-  font-family: "cmunci";
-  src: url("../fonts/cm-unicode-0.7.0/cmunci.ttf");
-}*/
-/*@font-face {
-  font-family: "CMU Typewriter Text";
-  font-style: italic;
-  src: url("../fonts/cm-unicode-0.7.0/cmunit.ttf");
-}*//*
-@font-face {
-  font-family: "cmunobi";
-  src: url("../fonts/cm-unicode-0.7.0/cmunobi.ttf");
-}
-@font-face {
-  font-family: "cmunobx";
-  src: url("../fonts/cm-unicode-0.7.0/cmunobx.ttf");
-}
-@font-face {
-  font-family: "cmunorm";
-  src: url("../fonts/cm-unicode-0.7.0/cmunorm.ttf");
-}
-@font-face {
-  font-family: "cmunoti";
-  src: url("../fonts/cm-unicode-0.7.0/cmunoti.ttf");
-}
-@font-face {
-  font-family: "cmunrb";
-  src: url("../fonts/cm-unicode-0.7.0/cmunrb.ttf");
-}*/
-/*@font-face {
-  font-family: "CMU Serif";
-  src: url("../fonts/cm-unicode-0.7.0/cmunrm.ttf");
-}*//*
-@font-face {
-  font-family: "cmunsi";
-  src: url("../fonts/cm-unicode-0.7.0/cmunsi.ttf");
-}
-@font-face {
-  font-family: "cmunsl";
-  src: url("../fonts/cm-unicode-0.7.0/cmunsl.ttf");
-}
-@font-face {
-  font-family: "cmunso";
-  src: url("../fonts/cm-unicode-0.7.0/cmunso.ttf");
-}
-@font-face {
-  font-family: "cmunss";
-  src: url("../fonts/cm-unicode-0.7.0/cmunss.ttf");
-}
-@font-face {
-  font-family: "cmunssdc";
-  src: url("../fonts/cm-unicode-0.7.0/cmunssdc.ttf");
-}
-@font-face {
-  font-family: "cmunst";
-  src: url("../fonts/cm-unicode-0.7.0/cmunst.ttf");
-}
-@font-face {
-  font-family: "cmunsx";
-  src: url("../fonts/cm-unicode-0.7.0/cmunsx.ttf");
-}
-@font-face {
-  font-family: "cmuntb";
-  src: url("../fonts/cm-unicode-0.7.0/cmuntb.ttf");
-}*/
-/*@font-face {
-  font-family: "CMU Serif";
-  font-style: italic;
-  src: url("../fonts/cm-unicode-0.7.0/cmunti.ttf");
-}
-@font-face {
-  font-family: "CMU Typewriter Text";
-  src: url("../fonts/cm-unicode-0.7.0/cmuntt.ttf");
-}*//*
-@font-face {
-  font-family: "cmuntx";
-  src: url("../fonts/cm-unicode-0.7.0/cmuntx.ttf");
-}
-@font-face {
-  font-family: "cmunui";
-  src: url("../fonts/cm-unicode-0.7.0/cmunui.ttf");
-}
-@font-face {
-  font-family: "cmunvi";
-  src: url("../fonts/cm-unicode-0.7.0/cmunvi.ttf");
-}
-@font-face {
-  font-family: "cmunvt";
-  src: url("../fonts/cm-unicode-0.7.0/cmunvt.ttf");
-}*/
-/*@font-face {
-  font-family: "ipag";
-  src: url("../fonts/IPAfont00303/ipag.ttf");
-}*//*
-@font-face {
-  font-family: "ipagp";
-  src: url("../fonts/IPAfont00303/ipagp.ttf");
-}
-@font-face {
-  font-family: "ipam";
-  src: url("../fonts/IPAfont00303/ipam.ttf");
-}
-@font-face {
-  font-family: "ipamp";
-  src: url("../fonts/IPAfont00303/ipamp.ttf");
-}*/
