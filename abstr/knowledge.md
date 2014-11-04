@@ -8,7 +8,8 @@
 </p>
 IGNORE -->
 
-<p align="center"><img id="logo" src="abstr-logo.png" width="320px" height="320px" /></p>
+<p align="center"><a href="./"><img id="logo"
+src="abstr-logo.png" width="320px" height="320px" /></a></p>
 
 <!--
 
