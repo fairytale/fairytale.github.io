@@ -1,5 +1,10 @@
 .PHONY: all
-all: index.html README.html ep2045-1-22.html ep2045-4-5.html knowledge.html
+all: index.html \
+	README.html \
+	ep2045-1-22.html \
+	ep2045-4-5.html \
+	ep2045-4-5a.html \
+	knowledge.html
 
 .PHONY: dev
 dev: dev/abstr-logo.png \
@@ -8,6 +13,7 @@ dev: dev/abstr-logo.png \
 	dev/README.html \
 	dev/ep2045-1-22.html \
 	dev/ep2045-4-5.html \
+	dev/ep2045-4-5a.html \
 	dev/knowledge.html
 
 README.md: index.md
