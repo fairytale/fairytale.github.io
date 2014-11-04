@@ -10,7 +10,8 @@
 body {
   color: #333;
   word-wrap: break-word;
-  font-family: "CMU Serif", "ipag" /*, "Source Han Sans JP"*/;
+  /*font-family: "CMU Serif", "ipag"*/ /*, "Source 
+Han Sans JP"*/;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -50,7 +51,8 @@ pre:not([class=file-vars]) {
 }
 
 code {
-  font-family: "CMU Typewriter Text";
+  font-family: monospace;
+  /*font-family: "CMU Typewriter Text";*/
 }
 
 .footnote:target {
@@ -74,7 +76,8 @@ code {
 }
 
 .file-vars {
-  font-family: "CMU Typewriter Text";
+  font-family: monospace;
+  /*font-family: "CMU Typewriter Text";*/
   /*color: #ccc;*/
 }
 
@@ -126,11 +129,11 @@ code {
   font-family: "cmunci";
   src: url("../fonts/cm-unicode-0.7.0/cmunci.ttf");
 }*/
-@font-face {
+/*@font-face {
   font-family: "CMU Typewriter Text";
   font-style: italic;
   src: url("../fonts/cm-unicode-0.7.0/cmunit.ttf");
-}/*
+}*//*
 @font-face {
   font-family: "cmunobi";
   src: url("../fonts/cm-unicode-0.7.0/cmunobi.ttf");
@@ -151,10 +154,10 @@ code {
   font-family: "cmunrb";
   src: url("../fonts/cm-unicode-0.7.0/cmunrb.ttf");
 }*/
-@font-face {
+/*@font-face {
   font-family: "CMU Serif";
   src: url("../fonts/cm-unicode-0.7.0/cmunrm.ttf");
-}/*
+}*//*
 @font-face {
   font-family: "cmunsi";
   src: url("../fonts/cm-unicode-0.7.0/cmunsi.ttf");
@@ -187,7 +190,7 @@ code {
   font-family: "cmuntb";
   src: url("../fonts/cm-unicode-0.7.0/cmuntb.ttf");
 }*/
-@font-face {
+/*@font-face {
   font-family: "CMU Serif";
   font-style: italic;
   src: url("../fonts/cm-unicode-0.7.0/cmunti.ttf");
@@ -195,7 +198,7 @@ code {
 @font-face {
   font-family: "CMU Typewriter Text";
   src: url("../fonts/cm-unicode-0.7.0/cmuntt.ttf");
-}/*
+}*//*
 @font-face {
   font-family: "cmuntx";
   src: url("../fonts/cm-unicode-0.7.0/cmuntx.ttf");
@@ -212,10 +215,10 @@ code {
   font-family: "cmunvt";
   src: url("../fonts/cm-unicode-0.7.0/cmunvt.ttf");
 }*/
-@font-face {
+/*@font-face {
   font-family: "ipag";
   src: url("../fonts/IPAfont00303/ipag.ttf");
-}/*
+}*//*
 @font-face {
   font-family: "ipagp";
   src: url("../fonts/IPAfont00303/ipagp.ttf");
