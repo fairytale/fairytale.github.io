@@ -10,6 +10,10 @@
 body {
   color: #333;
   word-wrap: break-word;
+  font-family: "CMU Serif", "Optima",
+               "IPAゴシック",
+               "Source Han Sans JP ",
+               sans-serif;
   /*font-family: "CMU Serif", "ipag"*/ /*, "Source 
 Han Sans JP"*//*;*/
   text-size-adjust: 100%;
@@ -51,8 +55,12 @@ pre:not([class=file-vars]) {
 }
 
 code {
-  font-family: monospace;
-  /*font-family: "CMU Typewriter Text";*/
+
+  /*font-family: monospace;*/
+  font-family: "CMU Typewriter Text", "Source Code Pro",
+               "Consolas", "Monaco",
+               "Courier New", "Courier",
+               monospace;
 }
 
 .footnote:target {
@@ -76,7 +84,10 @@ code {
 }
 
 .file-vars {
-  font-family: monospace;
+  font-family: "CMU Typewriter Text", "Source Code Pro",
+               "Consolas", "Monaco",
+               "Courier New", "Courier",
+               monospace;
   /*font-family: "CMU Typewriter Text";*/
   /*color: #ccc;*/
 }
