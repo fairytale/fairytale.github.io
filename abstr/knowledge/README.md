@@ -19,6 +19,14 @@ TEMPLATES
 
 -->
 
+<!-- IGNORE
+<p class="local-vars">
+(* Local Variables: *)<br />
+(* Stability: experimental *)<br />
+(* End: *)<br />
+</p>
+IGNORE -->
+
 ## Characters
 
 <ruby>古園井<rp>(</rp><rt>こぞのい</rt><rp>)</rp></ruby><ruby>真鳥<rp>(</rp><rt>まとり</rt><rp>)</rp></ruby>
@@ -116,11 +124,3 @@ Language: SML (Moscow ML)
 ## Gadgets
 
 Facebook Ring
-
-<!-- IGNORE
-<p class="local-vars">
-(* Local Variables: *)<br />
-(* Stability: experimental *)<br />
-(* End: *)<br />
-</p>
-IGNORE -->

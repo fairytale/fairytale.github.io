@@ -7,6 +7,14 @@ IGNORE -->
 <p align="center"><a href="./"><img id="logo" 
 src="img/abstr-logo.png" width="320px" height="320px" /></a></p>
 
+<!-- IGNORE
+<p class="local-vars">
+(* Local Variables: *)<br />
+(* Stability: experimental *)<br />
+(* End: *)<br />
+</p>
+IGNORE -->
+
 ## Episodes
 
 * [Episode 2045-01-22T02Z](episode/2045-01-22T02Z.md)
@@ -28,11 +36,3 @@ $ cd fairytale.github.io/abstr
 ## Knowledge
 
 * [Knowledge](knowledge)
-
-<!-- IGNORE
-<p class="local-vars">
-(* Local Variables: *)<br />
-(* Stability: experimental *)<br />
-(* End: *)<br />
-</p>
-IGNORE -->
