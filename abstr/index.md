@@ -28,3 +28,11 @@ $ cd fairytale.github.io/abstr
 ## Knowledge
 
 * [Knowledge](knowledge)
+
+<!-- IGNORE
+<p class="local-vars">
+(* Local Variables: *)<br />
+(* Stability: experimental *)<br />
+(* End: *)<br />
+</p>
+IGNORE -->

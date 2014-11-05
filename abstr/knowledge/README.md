@@ -116,3 +116,11 @@ Language: SML (Moscow ML)
 ## Gadgets
 
 Facebook Ring
+
+<!-- IGNORE
+<p class="local-vars">
+(* Local Variables: *)<br />
+(* Stability: experimental *)<br />
+(* End: *)<br />
+</p>
+IGNORE -->

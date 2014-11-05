@@ -87,6 +87,21 @@ code {
                monospace;
 }
 
+.local-vars {
+  /*width: 40em;*/
+  display: table;
+  margin: 0 auto 0;
+  font-family:
+               "CMU Typewriter Text",
+               "Source Code Pro",
+               "BitStream Vera Sans Mono",
+               "Consolas", "Monaco",
+               "源ノ角ゴシック JP",
+               "Palatino Linotype",
+               "Courier",
+               monospace;
+}
+
 .warning {
   background-color: rgba(193, 56, 50, 0.85);
   border: solid 5px rgba(0, 0, 0, 0.1);
