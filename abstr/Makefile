@@ -1,10 +1,13 @@
 .PHONY: all
 all: index.html \
 	README.html \
+	README.md \
 	episode/2045-01-22T02Z.html \
 	episode/2045-04-05T03Z.html \
 	episode/2045-04-05T05Z.html \
-	knowledge/index.html
+	knowledge/index.html \
+	knowledge/README.md \
+	knowledge/README.html
 
 .PHONY: dev
 dev: dev/img/abstr-logo.png \
@@ -16,7 +19,7 @@ dev: dev/img/abstr-logo.png \
 	dev/episode/2045-04-05T05Z.html \
 	dev/knowledge/index.html
 
-README.md: index.md
+%/README.md: %/index.md
 	cp $^ $@
 
 dev/%.js: %.js
