@@ -1,9 +1,9 @@
 .PHONY: all
 all: index.html \
 	README.html \
-	ep2045-1-22.html \
-	ep2045-4-5.html \
-	ep2045-4-5a.html \
+	episode/2045-01-22T02Z.html \
+	episode/2045-04-05T03Z.html \
+	episode/2045-04-05T05Z.html \
 	knowledge.html
 
 .PHONY: dev
@@ -11,9 +11,9 @@ dev: dev/abstr-logo.png \
 	dev/wc.js \
 	dev/index.html \
 	dev/README.html \
-	dev/ep2045-1-22.html \
-	dev/ep2045-4-5.html \
-	dev/ep2045-4-5a.html \
+	dev/episode/2045-01-22T02Z.html \
+	dev/episode/2045-04-05T03Z.html \
+	dev/episode/2045-04-05T05Z.html \
 	dev/knowledge.html
 
 README.md: index.md
@@ -28,14 +28,14 @@ dev/%.png: %.png
 	cp $^ $@
 
 dev/%.html: %.md
-	mkdir -p dev
+	mkdir -p dev/episode
 	cat $^ | ./pp.sed | ./pp-dev.sed | ./pp.pl | \
 	pandoc $(shell perl -nle 'if(/^!(.*)/){print $$1}' $^) \
 	-V pagetitle='λ Abstraction' \
 	-V date-meta=`date -I` \
 	-V author-meta=Pasberth \
 	-H ../pandoc/header.html \
-	-V css=../../pandoc/main.css \
+	-V css=$(shell echo $^ | perl -pe 's|[^/]+|..|g')/../pandoc/main.css \
 	-s \
 	--highlight-style monochrome \
 	-f markdown \
@@ -49,7 +49,7 @@ dev/%.html: %.md
 	-V date-meta=`date -I` \
 	-V author-meta=Pasberth \
 	-H ../pandoc/header.html \
-	-V css=../pandoc/main.css \
+	-V css=$(shell echo $^ | perl -pe 's|[^/]+|..|g')/pandoc/main.css \
 	-s \
 	--highlight-style monochrome \
 	-f markdown \
