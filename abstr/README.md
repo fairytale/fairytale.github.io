@@ -13,6 +13,13 @@ src="abstr-logo.png" width="320px" height="320px" /></a></p>
 * [Episode 2045-4-5](ep2045-4-5.md)
 * [Episode 2045-4-5a](ep2045-4-5a.md)
 
+## How to get the source code
+
+```
+$ git clone git://github.com/fairytale/fairytale.github.io.git
+$ cd fairytale.github.io/abstr
+```
+
 ## Knowledge
 
 * [Knowledge](knowledge.md)
