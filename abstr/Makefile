@@ -30,7 +30,7 @@ dev/%.png: %.png
 dev/%.html: %.md
 	mkdir -p dev/episode
 	mkdir -p dev/knowledge
-	cat $^ | ./pp.sed | ./pp-dev.sed | ./pp.pl | \
+	cat $^ | ./bin/pp.sed | ./bin/pp-dev.sed | ./bin/pp.pl | \
 	pandoc $(shell perl -nle 'if(/^!(.*)/){print $$1}' $^) \
 	-V pagetitle='λ Abstraction' \
 	-V date-meta=`date -I` \
@@ -44,7 +44,7 @@ dev/%.html: %.md
 	-o $@
 
 %.html: %.md
-	cat $^ | ./pp.sed | ./pp.pl | \
+	cat $^ | ./bin/pp.sed | ./bin/pp.pl | \
 	pandoc $(shell perl -nle 'if(/^!(.*)/){print $$1}' $^) \
 	-V pagetitle='λ Abstraction' \
 	-V date-meta=`date -I` \
