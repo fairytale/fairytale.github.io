@@ -11,6 +11,7 @@ src="img/abstr-logo.png" width="320px" height="320px" /></a></p>
 <p class="local-vars">
 (* Local Variables: *)<br />
 (* Stability: experimental *)<br />
+(* Category: Novel *)<br />
 (* End: *)<br />
 </p>
 IGNORE -->
