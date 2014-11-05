@@ -27,4 +27,4 @@ $ cd fairytale.github.io/abstr
 
 ## Knowledge
 
-* [Knowledge](knowledge.md)
+* [Knowledge](knowledge)

@@ -4,7 +4,7 @@ all: index.html \
 	episode/2045-01-22T02Z.html \
 	episode/2045-04-05T03Z.html \
 	episode/2045-04-05T05Z.html \
-	knowledge.html
+	knowledge/index.html
 
 .PHONY: dev
 dev: dev/abstr-logo.png \
@@ -14,7 +14,7 @@ dev: dev/abstr-logo.png \
 	dev/episode/2045-01-22T02Z.html \
 	dev/episode/2045-04-05T03Z.html \
 	dev/episode/2045-04-05T05Z.html \
-	dev/knowledge.html
+	dev/knowledge/index.html
 
 README.md: index.md
 	cp $^ $@
@@ -29,6 +29,7 @@ dev/%.png: %.png
 
 dev/%.html: %.md
 	mkdir -p dev/episode
+	mkdir -p dev/knowledge
 	cat $^ | ./pp.sed | ./pp-dev.sed | ./pp.pl | \
 	pandoc $(shell perl -nle 'if(/^!(.*)/){print $$1}' $^) \
 	-V pagetitle='λ Abstraction' \
