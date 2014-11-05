@@ -86,3 +86,14 @@ code {
                "Courier",
                monospace;
 }
+
+.warning {
+  background-color: rgba(193, 56, 50, 0.85);
+  border: solid 5px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.experimental {
+  background-color: rgba(255, 203, 0, 0.5);
+  border: solid 5px rgba(0, 0, 0, 0.05);
+}
