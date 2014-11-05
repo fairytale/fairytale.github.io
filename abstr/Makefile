@@ -8,7 +8,7 @@ all: index.html \
 
 .PHONY: dev
 dev: dev/abstr-logo.png \
-	dev/wc.js \
+	dev/js/wc.js \
 	dev/index.html \
 	dev/README.html \
 	dev/episode/2045-01-22T02Z.html \
@@ -20,7 +20,7 @@ README.md: index.md
 	cp $^ $@
 
 dev/%.js: %.js
-	mkdir -p dev
+	mkdir -p dev/js
 	cp $^ $@
 
 dev/%.png: %.png
