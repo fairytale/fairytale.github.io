@@ -7,7 +7,7 @@ all: index.html \
 	knowledge/index.html
 
 .PHONY: dev
-dev: dev/abstr-logo.png \
+dev: dev/img/abstr-logo.png \
 	dev/js/wc.js \
 	dev/index.html \
 	dev/README.html \
@@ -24,7 +24,7 @@ dev/%.js: %.js
 	cp $^ $@
 
 dev/%.png: %.png
-	mkdir -p dev
+	mkdir -p dev/img
 	cp $^ $@
 
 dev/%.html: %.md

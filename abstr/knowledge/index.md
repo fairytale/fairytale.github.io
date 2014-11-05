@@ -9,7 +9,7 @@
 IGNORE -->
 
 <p align="center"><a href="./"><img id="logo"
-src="../abstr-logo.png" width="320px" height="320px" /></a></p>
+src="../img/abstr-logo.png" width="320px" height="320px" /></a></p>
 
 <!--
 
