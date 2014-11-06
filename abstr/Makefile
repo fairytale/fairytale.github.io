@@ -23,7 +23,8 @@ index.html: index.org
 	--template=../pandoc/template.html \
 	-V theme=百合 \
 	-V prefix=. \
-	-V revision=`git rev-parse master`
+	-V revision=`git rev-parse master` \
+	-V stable
 
 knowledge/index.html: knowledge/index.org
 	./bin/pp1.sed $^ | pandoc \
@@ -33,7 +34,7 @@ knowledge/index.html: knowledge/index.org
 	--template=../pandoc/template.html \
 	-V subtitle=Knowledge \
 	-V prefix=.. \
-	-V experimental \
+	-V provisional \
 	-V revision=`git rev-parse master`
 
 episode/2045-01-22T02Z.html: episode/2045-01-22T02Z.org
@@ -43,7 +44,7 @@ episode/2045-01-22T02Z.html: episode/2045-01-22T02Z.org
 	--template=../pandoc/template.html \
 	-V episode=2045-01-22T02Z \
 	-V continued-on=2045-04-05T03Z \
-	-V experimental \
+	-V provisional \
 	-V prefix=.. \
 	-V revision=`git rev-parse master`
 
@@ -55,7 +56,7 @@ episode/2045-04-05T03Z.html: episode/2045-04-05T03Z.org
 	-V episode=2045-04-05T03Z \
 	-V continued-from=2045-01-22T02Z \
 	-V continued-on=2045-04-05T05Z \
-	-V experimental \
+	-V provisional \
 	-V prefix=.. \
 	-V revision=`git rev-parse master`
 

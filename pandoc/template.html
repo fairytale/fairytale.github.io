@@ -77,14 +77,20 @@ $endif$
 </p>
 $if(experimental)$
 <p align="center" class="experimental">
-これは実験的な小説です。完結はしていますが、 
-内容が予告なく変更される可能性があ
-ります。
+<strong>これは実験的なページです。</strong>
+内容が予告なく変更される可能性があります。
 </p>
 $endif$
 $if(warning)$
 <p align="center" class="warning">
-この小説は執筆中です。
+<strong>これは執筆中のページです。</strong>
+公開はされているものの、未完成です。
+</p>
+$endif$
+$if(provisional)$
+<p align="center" class="provisional">
+<strong>これは暫定的なページです。</strong>
+将来、内容が変更される可能性があります。
 </p>
 $endif$
 <p class="local-vars">
@@ -95,6 +101,15 @@ $continued-from$&quot;</a> *)<br />
 $endif$
 $if(experimental)$
 (* Stability: experimental *)<br />
+$endif$
+$if(warning)$
+(* Stability: writing *)<br />
+$endif$
+$if(provisional)$
+(* Stability: provisional *)<br />
+$endif$
+$if(stable)$
+(* Stability: stable *)<br />
 $endif$
 (* Category: Novel *)<br /> 
 (* End: *)<br />
