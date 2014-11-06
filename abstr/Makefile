@@ -34,6 +34,15 @@ episode/2045-04-05T03Z.html: episode/2045-04-05T03Z.org
 	-V continued-on=2045-04-05T05Z \
 	-V experimental
 
+episode/2045-04-05T05Z.html: episode/2045-04-05T05Z.org
+	pandoc \
+	$^ -o $@ -s \
+	-V css=../../pandoc/org.css \
+	--template=../pandoc/template.html \
+	-V episode=2045-04-05T05Z \
+	-V continued-from=2045-04-05T03Z \
+	-V warning
+
 %.html: %.md
 	cat $^ | ./bin/pp.sed | ./bin/pp.pl | \
 	pandoc $(shell perl -nle 'if(/^!(.*)/){print $$1}' $^) \
