@@ -1,18 +1,18 @@
 .PHONY: all
 all: index.html \
 	README.html \
-	README.md \
+	README.org \
 	episode/2045-01-22T02Z.html \
 	episode/2045-04-05T03Z.html \
 	episode/2045-04-05T05Z.html \
 	knowledge/index.html \
-	knowledge/README.md \
+	knowledge/README.org \
 	knowledge/README.html
 
-README.md: index.md
+README.org: index.org
 	cp $^ $@
 
-%/README.md: %/index.md
+%/README.org: %/index.org
 	cp $^ $@
 
 index.html: index.org
@@ -64,17 +64,3 @@ episode/2045-04-05T05Z.html: episode/2045-04-05T05Z.org
 	-V continued-from=2045-04-05T03Z \
 	-V warning \
 	-V logo=../img/abstr-logo.png
-
-%.html: %.md
-	cat $^ | ./bin/pp.sed | ./bin/pp.pl | \
-	pandoc $(shell perl -nle 'if(/^!(.*)/){print $$1}' $^) \
-	-V pagetitle='λ Abstraction' \
-	-V date-meta=`date -I` \
-	-V author-meta=Pasberth \
-	-H ../pandoc/header.html \
-	-V css=$(shell echo $^ | perl -pe 's|[^/]+|..|g')/pandoc/main.css \
-	-s \
-	--highlight-style monochrome \
-	-f markdown \
-	-t html \
-	-o $@
