@@ -57,7 +57,8 @@ episode/2045-01-22T02Z.html: episode/2045-01-22T02Z.org ../pandoc/template.html
 	-V provisional \
 	-V prefix=.. \
 	-V revision=`git rev-parse master` \
-	-V version=${VERSION}
+	-V version=${VERSION} \
+	-V continued-from-nil
 
 episode/2045-04-05T03Z.html: episode/2045-04-05T03Z.org ../pandoc/template.html
 	pandoc \
@@ -82,4 +83,5 @@ episode/2045-04-05T05Z.html: episode/2045-04-05T05Z.org ../pandoc/template.html
 	-V warning \
 	-V prefix=.. \
 	-V revision=`git rev-parse master` \
-	-V version=${VERSION}
+	-V version=${VERSION} \
+	-V continued-on-nil

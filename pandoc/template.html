@@ -99,6 +99,16 @@ $if(continued-from)$
 (* Continued-from: <a href="$continued-from$.html">&quot;Epsiode 
 $continued-from$&quot;</a> *)<br />
 $endif$
+$if(continued-from-nil)$
+(* Continued-from: nil *)<br />
+$endif$
+$if(continued-on)$
+(* Continued-on: <a href="$continued-on$.html">&quot;Epsiode 
+$continued-on$&quot;</a> *)<br />
+$endif$
+$if(continued-on-nil)$
+(* Continued-on: nil *)<br />
+$endif$
 $if(version)$
 (* Version: &quot;$version$&quot; *)<br />
 $endif$
@@ -120,9 +130,19 @@ $endif$
 $body$
 <p class="local-vars">
 (* Local Variables: *)<br />
+$if(continued-from)$
+(* Continued-from: <a href="$continued-from$.html">&quot;Epsiode 
+$continued-from$&quot;</a> *)<br />
+$endif$
+$if(continued-from-nil)$
+(* Continued-from: nil *)<br />
+$endif$
 $if(continued-on)$
 (* Continued-on: <a href="$continued-on$.html">&quot;Epsiode 
 $continued-on$&quot;</a> *)<br />
+$endif$
+$if(continued-on-nil)$
+(* Continued-on: nil *)<br />
 $endif$
 $if(revision)$
 (* Revision: &quot;$revision$&quot; *)<br />
