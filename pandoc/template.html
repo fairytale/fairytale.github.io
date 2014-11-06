@@ -57,11 +57,15 @@ $endif$
 $if(episode)$
 (* -*- title: &quot;λ Abstraction&quot;; episode: &quot;$episode$&quot; -*- *)
 $else$
+$if(theme)$
+(* -*- title: &quot;λ Abstraction&quot;; theme: &quot;$theme$&quot; -*- *)
+$else$
 (* -*- title: &quot;λ Abstraction&quot; -*- *)
+$endif$
 $endif$
 </p>
 <p align="center">
-<a href="../"><img id="logo" src="../img/abstr-logo.png" /></a>
+<a href="../"><img id="logo" src="$logo$" /></a>
 </p>
 $if(experimental)$
 <p align="center" class="experimental">

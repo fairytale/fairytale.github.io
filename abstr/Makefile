@@ -15,6 +15,15 @@ README.md: index.md
 %/README.md: %/index.md
 	cp $^ $@
 
+index.html: index.org
+	./bin/pp1.sed $^ | pandoc \
+	-f org \
+	-o $@ -s \
+	-V css=../pandoc/org.css \
+	--template=../pandoc/template.html \
+	-V theme=百合 \
+	-V logo=img/abstr-logo.png
+
 episode/2045-01-22T02Z.html: episode/2045-01-22T02Z.org
 	pandoc \
 	$^ -o $@ -s \
@@ -22,7 +31,8 @@ episode/2045-01-22T02Z.html: episode/2045-01-22T02Z.org
 	--template=../pandoc/template.html \
 	-V episode=2045-01-22T02Z \
 	-V continued-on=2045-04-05T03Z \
-	-V experimental
+	-V experimental \
+	-V logo=../img/abstr-logo.png
 
 episode/2045-04-05T03Z.html: episode/2045-04-05T03Z.org
 	pandoc \
@@ -32,7 +42,8 @@ episode/2045-04-05T03Z.html: episode/2045-04-05T03Z.org
 	-V episode=2045-04-05T03Z \
 	-V continued-from=2045-01-22T02Z \
 	-V continued-on=2045-04-05T05Z \
-	-V experimental
+	-V experimental \
+	-V logo=../img/abstr-logo.png
 
 episode/2045-04-05T05Z.html: episode/2045-04-05T05Z.org
 	pandoc \
@@ -41,7 +52,8 @@ episode/2045-04-05T05Z.html: episode/2045-04-05T05Z.org
 	--template=../pandoc/template.html \
 	-V episode=2045-04-05T05Z \
 	-V continued-from=2045-04-05T03Z \
-	-V warning
+	-V warning \
+	-V logo=../img/abstr-logo.png
 
 %.html: %.md
 	cat $^ | ./bin/pp.sed | ./bin/pp.pl | \
