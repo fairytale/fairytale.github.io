@@ -18,6 +18,7 @@ body {
   -moz-text-size-adjust: 100%;
   -o-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  word-wrap: break-word;
 }
 
 a[href] {

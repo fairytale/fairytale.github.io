@@ -90,6 +90,9 @@
 まずはそれを目指しているのでした。
 
 * Methods
+
 * Results
+
 * Discussion
+
 * Conclusion
