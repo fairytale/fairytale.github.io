@@ -1,8 +1,13 @@
 # -*- mode: org -*-
 #+TITLE: 2045-01-22-T02Z - λ Abstraction
+#+DATE: 2045-01-28-T03Z
 #+AUTHOR: Kozonoi Matori
+#+STARTUP: inlineimages
+
+[[../img/abstr-logo-320x320.png]]
 
 * Abstract
+
 
 　京都λ抽象学院は京都にある国立全寮制女子高等専門学校。
 
