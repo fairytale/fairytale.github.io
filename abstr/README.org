@@ -31,3 +31,8 @@ $ cd fairytale.github.io/abstr
 #+BEGIN_HTML
 <a href="knowledge">Knowledge</a>
 #+END_HTML
+
+* Tips
+
+On each page, you can get the page's source code.
+To get it, just replace =html= extension with =org= extension.

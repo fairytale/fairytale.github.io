@@ -1,2 +1,2 @@
 #!/usr/bin/sed -f
-s/org/html/
+s/\.org/.html/
