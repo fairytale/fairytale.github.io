@@ -4,10 +4,11 @@
 #+AUTHOR: Kozonoi Matori
 #+STARTUP: inlineimages
 
+#+BEGIN_CENTER
 [[../img/abstr-logo-320x320.png]]
+#+END_CENTER
 
 * Abstract
-
 
 　京都λ抽象学院は京都にある国立全寮制女子高等専門学校。
 
@@ -541,8 +542,6 @@ Haskell や Ruby は人気のある言語。
 
 　受からないかもしれないという不安もあるけど、
 それ以上に、きたるべきこれからの学校生活が楽しみになるのでした。
-
-* Notes
 
 [fn:sml97] The Definition of Standard ML (Revised) が 
   1997年に出版されたことから、この規格のことを略して SML '97 と呼ぶ。
