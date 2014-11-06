@@ -5,8 +5,11 @@ all: index.html \
 	README.html \
 	README.org \
 	episode/2045-01-22T02Z.html \
+	episode/2045-01-22T02Z.txt \
 	episode/2045-04-05T03Z.html \
+	episode/2045-04-05T03Z.txt \
 	episode/2045-04-05T05Z.html \
+	episode/2045-04-05T05Z.txt \
 	knowledge/index.html \
 	knowledge/README.org \
 	knowledge/README.html
@@ -16,6 +19,9 @@ README.org: index.org ../pandoc/template.html
 
 %/README.org: %/index.org ../pandoc/template.html
 	cp $< $@
+
+episode/%.txt: episode/%.org
+	./bin/skip-blank.pl $< > $@
 
 index.html: index.org ../pandoc/template.html
 	./bin/pp1.sed $< | pandoc \
