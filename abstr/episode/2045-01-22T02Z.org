@@ -75,8 +75,9 @@ Standard ML の古典的な規格である The Definition of Standard ML (Revise
 かもしれない！
 
 　ちなみに、なぜいわゆる現代的な Successor ML 
-ではなく SML '97 なのかと言うと Successor ML は少々大きすぎるので
-授業で使うには SML '97 のほうが適しているとのことだった。
+ではなく SML '97 [fn:sml97] なのかと言うと 
+Successor ML は少々大きすぎるので授業で使うには SML '97
+のほうが適しているとのことだった。
 
 　だから、わたしは京都λ抽象学院を目指したの。
 
@@ -535,3 +536,8 @@ Haskell や Ruby は人気のある言語。
 
 　受からないかもしれないという不安もあるけど、
 それ以上に、きたるべきこれからの学校生活が楽しみになるのでした。
+
+* Notes
+
+[fn:sml97] The Definition of Standard ML (Revised) が 
+  1997年に出版されたことから、この規格のことを略して SML '97 と呼ぶ。
