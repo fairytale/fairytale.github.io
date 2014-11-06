@@ -95,9 +95,9 @@ Language: SML
 
 Language: OCaml
 
-アリス・？？？
+アリス＝メヒティルト・ローレンツ
 
-Alice ???
+Alice-Mechthild Lorenz
 
 ドイツ人
 
