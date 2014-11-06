@@ -5,7 +5,7 @@
 #+STARTUP: inlineimages
 
 #+BEGIN_CENTER
-[[file:../img/abstr-logo-320x320.png]]
+[[../img/abstr-logo-320x320.png]]
 #+END_CENTER
 
 * Abstract
