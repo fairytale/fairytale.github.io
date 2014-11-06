@@ -8,7 +8,6 @@
 }
 body {
   color: #333;
-  word-wrap: break-word;
   font-family:
                "源ノ角ゴシック JP",
                "メイリオ",
@@ -18,7 +17,6 @@ body {
   -moz-text-size-adjust: 100%;
   -o-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  word-wrap: break-word;
 }
 
 a[href] {
@@ -99,6 +97,7 @@ code {
                "Palatino Linotype",
                "Courier",
                monospace;
+  word-break: break-all;
 }
 
 .local-vars {
@@ -114,6 +113,7 @@ code {
                "Palatino Linotype",
                "Courier",
                monospace;
+  word-break: break-all;
 }
 
 .warning {
