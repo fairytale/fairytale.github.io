@@ -1,3 +1,8 @@
+# -*- mode: org -*-
+#+TITLE: 2045-04-05-T05Z
+#+DATE: 2045-04-16-T10Z
+#+AUTHOR: Kozonoi Matori
+
 * Abstract
 
 　京都λ抽象学院の入学式を終えたわたし。

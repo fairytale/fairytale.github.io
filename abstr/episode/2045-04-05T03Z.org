@@ -1,3 +1,8 @@
+# -*- mode: org -*-
+#+TITLE: 2045-04-05-T03Z
+#+DATE: 2045-04-09-T11Z
+#+AUTHOR: Kozonoi Matori
+
 * Abstract
 
 　京都λ抽象学院の推薦入試を受けたわたし。
