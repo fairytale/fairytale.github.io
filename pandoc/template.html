@@ -60,7 +60,13 @@ $else$
 $if(theme)$
 (* -*- title: &quot;λ Abstraction&quot;; theme: &quot;$theme$&quot; -*- *)
 $else$
+$if(subtitle)$
+(* -*- title: &quot;λ Abstraction&quot;; subtitle: 
+&quot;$subtitle$&quot; 
+-*- *)
+$else$
 (* -*- title: &quot;λ Abstraction&quot; -*- *)
+$endif$
 $endif$
 $endif$
 </p>

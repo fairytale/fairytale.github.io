@@ -24,6 +24,16 @@ index.html: index.org
 	-V theme=百合 \
 	-V logo=img/abstr-logo.png
 
+knowledge/index.html: knowledge/index.org
+	./bin/pp1.sed $^ | pandoc \
+	-f org \
+	-o $@ -s \
+	-V css=../../pandoc/org.css \
+	--template=../pandoc/template.html \
+	-V subtitle=Knowledge \
+	-V logo=../img/abstr-logo.png \
+	-V experimental
+
 episode/2045-01-22T02Z.html: episode/2045-01-22T02Z.org
 	pandoc \
 	$^ -o $@ -s \
