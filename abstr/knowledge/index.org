@@ -1,3 +1,5 @@
+#+TITLE: Knowledge - λ Abstraction
+
 * Logo
 
 #+BEGIN_SRC
