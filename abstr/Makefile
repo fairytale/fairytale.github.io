@@ -1,4 +1,4 @@
-VERSION = 0.0.4a
+VERSION = 0.0.4
 
 .PHONY: all
 all: index.html \
