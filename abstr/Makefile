@@ -78,7 +78,7 @@ episode/2045-04-05T05Z.html: episode/2045-04-05T05Z.org ../pandoc/template.html
 	--template=../pandoc/template.html \
 	-V episode=2045-04-05T05Z \
 	-V continued-from=2045-04-05T03Z \
-	-V warning \
+	-V experimental \
 	-V prefix=.. \
 	-V revision=`git rev-parse master` \
 	-V version=${VERSION} \
