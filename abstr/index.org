@@ -49,7 +49,7 @@ $ cd fairytale.github.io/abstr
 * Knowledge
 
 #+BEGIN_HTML
-<a href="knowledge">Knowledge</a>
+<ul><li><a href="knowledge">Knowledge</a></li></ul>
 #+END_HTML
 
 * Tips
