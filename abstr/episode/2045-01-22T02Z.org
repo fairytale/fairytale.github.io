@@ -1,6 +1,6 @@
 # -*- mode: org -*-
-#+TITLE: 2045-01-22-T02Z
-#+DATE: 2045-01-28-T03Z
+#+TITLE: 2045-01-22T02Z
+#+DATE: 2045-01-28T03Z
 #+AUTHOR: Kozonoi Matori
 
 * Abstract
