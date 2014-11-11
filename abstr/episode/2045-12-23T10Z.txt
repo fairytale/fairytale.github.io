@@ -1,6 +1,6 @@
 # -*- mode: org -*-
 #+TITLE: η Expansion
-#+DATE: 2046-01-07T11
+#+DATE: 2046-01-07T11Z
 #+AUTHOR: Alice M. Lorenz
 
 * Abstract
