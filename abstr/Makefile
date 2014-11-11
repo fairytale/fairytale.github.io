@@ -9,6 +9,8 @@ all: index.html \
 	episode/2045-04-05T03Z.txt \
 	episode/2045-04-05T05Z.html \
 	episode/2045-04-05T05Z.txt \
+	episode/2045-12-23T10Z.html \
+	episode/2045-12-23T10Z.txt \
 	knowledge/index.html \
 	knowledge/README.org
 
@@ -83,3 +85,16 @@ episode/2045-04-05T05Z.html: episode/2045-04-05T05Z.org ../pandoc/template.html
 	-V revision=`git rev-parse master` \
 	-V version=${VERSION} \
 	-V continued-on-nil
+
+episode/2045-12-23T10Z.html: episode/2045-12-23T10Z.org ../pandoc/template.html
+	pandoc \
+        $< -o $@ -s \
+        -V css=../../pandoc/org.css \
+        --template=../pandoc/template.html \
+        -V episode='η Expansion' \
+        -V continued-from-nil \
+        -V warning \
+        -V prefix=.. \
+        -V revision=`git rev-parse master` \
+        -V version=${VERSION} \
+        -V continued-on-nil

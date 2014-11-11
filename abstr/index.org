@@ -32,6 +32,16 @@
 
 # BREAK LIST
 
+* Side Stories
+
+#+BEGIN_HTML
+<ul>
+<li><a href="episode/2045-12-23T10Z.org">η Expansion</a></li>
+</ul>
+#+END_HTML
+
+# BREAK LIST
+
 * Information
 
 - GitHub: [[https://github.com/fairytale/fairytale.github.io]]
