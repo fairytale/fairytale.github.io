@@ -91,7 +91,7 @@ episode/2045-12-23T10Z.html: episode/2045-12-23T10Z.org ../pandoc/template.html
         $< -o $@ -s \
         -V css=../../pandoc/org.css \
         --template=../pandoc/template.html \
-        -V episode='η Expansion' \
+        -V episode="Sophiya's Last Theorem" \
         -V continued-from-nil \
         -V warning \
         -V prefix=.. \
