@@ -50,7 +50,7 @@ _/_   _\_ |__) .__)   |   |  \
 
 #+BEGIN_HTML
 <ul>
-<li><a href="episode/2045-12-23T10Z.org">η Expansion</a></li>
+<li><a href="episode/2045-12-23T10Z.org">Sophiya's Last Theorem</a></li>
 </ul>
 #+END_HTML
 
