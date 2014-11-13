@@ -21,7 +21,7 @@ README.org: abstr-logo.org index.org
 	cat $^ > $@
 
 episode/%.txt: episode/%.org
-	./bin/skip-blank.pl $< > $@
+	./bin/skip-blank.pl $< | ./bin/skip-blank1.pl > $@
 
 index.html: index.org ../pandoc/template.html
 	./bin/pp1.sed $< | pandoc \
