@@ -65,6 +65,17 @@ h1:first-letter {
   font-size: 1.5em;
 }
 
+h2 {
+  border-bottom: solid 1px #eee;
+  font-size: 1.25em;
+  text-transform: uppercase;
+  font-family: "CMU Serif", "Optima", "Times New Roman", serif;
+}
+
+h2:first-letter {
+  font-size: 1.5em;
+}
+
 pre:not([class=file-vars]) {
   padding: 1em;
   border-radius: 0.2em;
