@@ -93,7 +93,7 @@ episode/2045-12-23T10Z.html: episode/2045-12-23T10Z.org ../pandoc/template.html
         --template=../pandoc/template.html \
         -V episode="Sophiya's Last Theorem" \
         -V continued-from-nil \
-        -V warning \
+        -V experimental \
         -V prefix=.. \
         -V revision=`git rev-parse master` \
         -V version=${VERSION} \
