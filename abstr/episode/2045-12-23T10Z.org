@@ -1,5 +1,5 @@
 # -*- mode: org -*-
-#+TITLE: Sphiya's Last Theorem
+#+TITLE: Sophiya's Last Theorem
 #+DATE: 2046-01-07T11Z
 #+AUTHOR: Alice M. Lorenz
 
