@@ -1,4 +1,4 @@
-VERSION = 0.0.6
+VERSION = 0.0.7
 
 .PHONY: all
 all: index.html \
@@ -93,7 +93,7 @@ episode/2045-12-23T10Z.html: episode/2045-12-23T10Z.org ../pandoc/template.html
         --template=../pandoc/template.html \
         -V episode="Sophiya's Last Theorem" \
         -V continued-from-nil \
-        -V experimental \
+        -V provisional \
         -V prefix=.. \
         -V revision=`git rev-parse master` \
         -V version=${VERSION} \
